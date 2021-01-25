@@ -20,7 +20,6 @@ import net.leeuwestein.view.Mainview;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
         Mainview mainview = new Mainview();
         mainview.setVisible(true);
     }
