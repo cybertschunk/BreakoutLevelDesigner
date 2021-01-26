@@ -50,7 +50,11 @@ public class StonePanel extends JPanel implements MouseListener {
             int newStoneType = (this.stone.getType() +1) %4;
             this.stone.setType(newStoneType);
             this.updateToStone();
-            System.out.println(e);
+        }
+        if(e.getButton() == MouseEvent.BUTTON3) {
+            int newStoneType = 0;
+            this.stone.setType(newStoneType);
+            this.updateToStone();
         }
     }
 
